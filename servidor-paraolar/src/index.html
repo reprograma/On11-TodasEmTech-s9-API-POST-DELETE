@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            border: 0 auto;
+        }
+
+        fieldset {
+            width: 400px;
+            margin: 25% auto;
+        }
+
+        input {
+            width: 80%;
+            padding: 20px;
+            font-size: 2em;
+
+        }
+
+        button {
+            width: 90%;
+            padding: 20px;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>
+                <h3>POST</h3>
+            </legend>
+            <input type="text" id="nome">
+            <input type="text" id="celular">
+            <input type="text" id="redes-sociais">
+            <button onclick="enviar()">enviar</button>
+        </fieldset>
+    </div>
+
+    <script>
+        function entradas() {
+            const [nome, celular, redesSociais] = document.querySelectorAll("input");
+            return {
+                nome: nome.value,
+                celular: celular.value,
+                redesSociais: redesSociais.value
+            }
+        }
+        function enviar() {
+        const contato = entradas();
+            fetch('http://localhost:8080/contatos/cadastrar', {
+                method: "POST",
+                body: JSON.stringify(contato),
+                headers: { "Content-type": "application/json; charset=UTF-8" }
+            })
+                .then(response => response.json())
+                .then(json => location.replace('/'))
+                .catch(err => console.log(err))
+        }
+    </script>
+</body>
+
+</html>
