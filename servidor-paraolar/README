@@ -1,0 +1,9 @@
+"/" = Index do projeto.
+
+"/contacts/" = Mostra todos os contatos.
+
+"/contacts/{id}" (metodo: GET) = Filtra os contatos pelo id.
+
+"/contacts/register" = Cria um novo contato.
+
+"/contacts/{id}" (metodo: DELETE) = Apaga o contato pelo id.
