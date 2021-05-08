@@ -5,5 +5,6 @@ const controller = require("../controllers/contatosController");
 // Rota de contatos
 router.get("/", controller.getAll);
 router.get("/:id", controller.getById);
+router.post("/cadastrar", controller.createContact);
 
 module.exports = router;
