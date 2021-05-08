@@ -13,7 +13,19 @@ const getById = (request, response)=>{
     response.status(200).send(contatoFiltrado);
 }
 
+const createContact = (request, response) => {
+    // Deverá ser enviado um BODY
+    const nomeRequerido = request.body.nome;
+    const celularRequerido = request.body.celular;
+    const redesSociaisRequerida = request.body.redesSociais;
+
+    console.log(nomeRequerido);
+    console.log(celularRequerido);
+    console.log(redesSociaisRequerida);
+}
+
 module.exports = {
     getAll,
-    getById
+    getById,
+    createContact
 }
