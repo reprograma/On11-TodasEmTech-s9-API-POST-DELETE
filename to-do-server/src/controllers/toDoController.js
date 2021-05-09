@@ -26,7 +26,7 @@ const createTask = (request, response) => {
         descricao: descricaoRequirido,
         nomeColaborador: nomeColaboradorRequerido
     }
-    tarefas.push(movaTarefa)
+    tarefas.push(novaTarefa)
 
     // fs.writeFile("./src/models/tarefas.json", JSON.stringify(tarefasJson), 'utf8',
     //function(err) {
