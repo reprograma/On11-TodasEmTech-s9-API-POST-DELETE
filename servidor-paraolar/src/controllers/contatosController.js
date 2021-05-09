@@ -19,9 +19,17 @@ const createContact = (request, response) => {
     const celularRequerido = request.body.celular;
     const redesSociaisRequerida = request.body.redesSociais;
 
-    console.log(nomeRequerido);
-    console.log(celularRequerido);
-    console.log(redesSociaisRequerida);
+    // Criar um objeto
+    const novoContato =  {
+        id: "2",
+        dataInclusao: "19/10/2021",
+        nome: nomeRequerido,
+        celular: celularRequerido,
+        redesSociais: redesSociaisRequerida
+    }
+
+    // Resposta
+    response.status(200).send(novoContato);
 }
 
 module.exports = {
