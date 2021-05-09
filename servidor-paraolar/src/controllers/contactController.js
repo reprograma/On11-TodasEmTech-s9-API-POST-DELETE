@@ -41,13 +41,18 @@ const createContact = (req, res) => {
 
 const deleteContact = (req, res) => {
   const id = req.params.id;
-  const contato = contatos.find(contato => contato.id == id);
+  const contatoSelecionado = contatos.find(contato => contato.id == id);
+  const index = contatos.indexOf(contatoSelecionado)
+  contatos.splice(index, 1);
 
-  res.status(200).send()
+  res.status(200).json([{
+    "mensagem": "Contato excluído com sucesso!", contatos
+  }])
 }
 
 module.exports = {
   getAll,
   getById, 
-  createContact
+  createContact,
+  deleteContact
 }
