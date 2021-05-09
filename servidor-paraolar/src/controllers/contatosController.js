@@ -48,8 +48,37 @@ const createContact = (request, response) => {
     response.status(200).send(novoContato);
 }
 
+// Deleta um contato por id
+const deleteContact = (request, response) => {
+    const idRequerido = request.params.id;
+    const contatoFiltrado = contatosJson.find(contato => contato.id === idRequerido);
+    const indice = contatosJson.indexOf(contatoFiltrado);
+
+    // Remove pelo indice
+    contatosJson.splice(indice, 1);
+
+    // Escreve no arquivo JSON
+    fs.writeFile("./src/models/contatos.json", JSON.stringify(contatosJson), "utf8", (err)=>{
+        if(err){
+            return response.status(424).send(
+                {
+                    message: err
+                }
+            );
+        }
+    });
+
+    // Resposta
+    response.status(200).json([{
+        "mensagem": "Contato deletado com sucesso",
+        contatosJson
+    }])
+
+}
+
 module.exports = {
     getAll,
     getById,
-    createContact
+    createContact,
+    deleteContact
 }
