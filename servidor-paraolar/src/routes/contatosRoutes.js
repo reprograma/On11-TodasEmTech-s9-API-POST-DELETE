@@ -6,5 +6,6 @@ const controller = require("../controllers/contatosController");
 router.get("/", controller.getAll);
 router.get("/:id", controller.getById);
 router.post("/cadastrar", controller.createContact);
+router.delete("/:id", controller.deleteContact);
 
 module.exports = router;
