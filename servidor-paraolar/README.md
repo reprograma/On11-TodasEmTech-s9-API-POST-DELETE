@@ -18,7 +18,7 @@ Deleta um contato por id.
 
 ## [POST] "/contatos/cadastrar"
 
-Cadastra um contato.
+Cadastra um novo contato.
 
 ```json
 // Deverá ser enviado no BODY
