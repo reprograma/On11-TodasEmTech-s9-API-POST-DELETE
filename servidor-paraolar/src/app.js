@@ -1,22 +1,14 @@
 const express = require("express")
 const app = express()
-
 const cors = require("cors")
 
 app.use(cors())
 app.use(express.json())
 
 const index = require("./routes/index")
-const tarefas = require("./routes/toDoRouts")
-=======
-
-app.use(express.json())
-
-const index = require("./routes/index")
-const tarefas = require("./routes/toDoRoutes")
-
+const contatos = require("./routes/contatosRoutes")
 
 app.use("/", index)
-app.use("/tarefas", tarefas)
+app.use("/contatos", contatos)
 
 module.exports = app
