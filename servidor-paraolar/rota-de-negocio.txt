@@ -1,0 +1,41 @@
+//Rota de apresentação do projeto: 
+// "Contatos" deve retornar todas as tarefas
+//Devo conseguir filtrar por id
+//Devo conseguir deletar contatos
+//Devo conseguir cadastrar novo contato
+id tem que ser randômico
+
+[GET] "/"
+retornar a apresentação do projeto
+
+[GET]"/tarefas"
+retornar todas as tarefas
+
+[GET]"/tarefas/:id"
+retorna uma tarefa por id
+
+[DELETE]"/tarefas/:id"
+deleta uma tarefa
+
+[POST]"/tarefas/cadastrar"
+Deverá ser enviada pelo Body
+
+JSON
+
+  {
+      "id": "1",
+      "dataInclusao": "19/10/2020",
+      "concluido": false,
+      "descricao": "Aprender como usar datas no javascript",
+      "nomeColaborador": "Manoela"
+  },
+
+1. Dentro da pasta do servidor crie o arquivo server. js
+2 npm init -y
+3 instalar dependências npm i express, npm nodemon, 
+4 cria .gitignore
+5 coloca o node_modules no . gitignore
+6 coloca o nomedom no comando start dentro do comando do package.json
+7 cria o src
+8 dentro do src cria o arquivo app.js e as pastas models, controlles e routes
+9 dentro de cada uma das pastas (models, controlles e routes) e gente cria os respectivos arquivos.
