@@ -1,14 +1,1 @@
-[
-  {
-      "id": "1",
-      "nome": "Manoela",
-      "celular": "(43)912345678",
-      "redesSociais": "@manoelagatinha1"
-  },
-  {
-      "id": "2",
-      "nome": "Fernanda",
-      "celular": "(43)912345678",
-      "redesSociais": "@fernada_daSilva"
-  }
-]
+[{"id":"1","nome":"Manoela","celular":"(43)912345678","redesSociais":"@manoelagatinha1"},{"id":"2","nome":"Fernanda","celular":"(43)912345678","redesSociais":"@fernada_daSilva"},{"id":"ekak90u1q","celular":"(81)989842435","redesSociais":"thamiress-t"},{"id":"mtr1fg980","celular":"(81)989842435","redesSociais":"thamiress-t"},{"id":"k384h7i82","nome":"Thami","celular":"(81)989842435","redesSociais":"thamiress-t"}]
