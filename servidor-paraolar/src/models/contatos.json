@@ -1,14 +1,38 @@
 [
   {
-      "id": "1",
-      "nome": "Manoela",
-      "celular": "(43)912345678",
-      "redesSociais": "@manoelagatinha1"
+    "id": "1",
+    "nome": "Manoela",
+    "celular": "(43)912345678",
+    "redesSociais": "@manoelagatinha1"
   },
   {
-      "id": "2",
-      "nome": "Fernanda",
-      "celular": "(43)912345678",
-      "redesSociais": "@fernada_daSilva"
+    "id": "2",
+    "nome": "Fernanda",
+    "celular": "(43)912345678",
+    "redesSociais": "@fernada_daSilva"
+  },
+  {
+    "id": "3",
+    "nome": "Amanda",
+    "celular": "(53)912345678",
+    "redesSociais": "@amandinha_22"
+  },
+  {
+    "id": "4",
+    "nome": "Bárbara",
+    "celular": "(87)912345678",
+    "redesSociais": "@babis2411"
+  },
+  {
+    "id": "5",
+    "nome": "Analu",
+    "celular": "(11)912345678",
+    "redesSociais": "@loveranalu1"
+  },
+  {
+    "id": "6",
+    "nome": "Rafael",
+    "celular": "(81)992353032",
+    "redesSociais": "@RafaelSenhorinho"
   }
 ]
