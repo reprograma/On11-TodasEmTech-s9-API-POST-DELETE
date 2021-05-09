@@ -21,8 +21,8 @@ const createContact = (request, response) => {
 
     // Criar um objeto
     const novoContato =  {
-        id: "2",
-        dataInclusao: "19/10/2021",
+        id: Math.random().toString(32).substr(2,9),
+        dataInclusao: new Date(),
         nome: nomeRequerido,
         celular: celularRequerido,
         redesSociais: redesSociaisRequerida
