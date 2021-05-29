@@ -1,5 +1,5 @@
 const express = require("express")
-const router = express.Router()
+const router = express.Router()//Router com maiuscula ja vem pronta do express / router minuscula é a variavel criada da execução pronta // essa função cria ROTAS
 
 router.get("/", (request, response)=>{
     response.status(200).json({

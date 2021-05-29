@@ -1,0 +1,32 @@
+* Quero uma rota de apresentação para projeto;
+* /tarefas deve retornar todas as tarefas;
+* Devo conseguir filtrar por id;
+* Devo conseguir deletar as tarefas;
+* Devo conseguir cadastrar novas tarefas somente com o nome e descrição;
+* Id tem que ser randomico;
+* Toda a atividade cadastrada deve conter data e hora que foi criada;
+* Toda a atividade quando cadastrada fica automaticamente com status concluido como false;
+
+
+[GET] "/"
+retornar a apresentação do projeto
+
+[GET]"/tarefas"
+retornar todas as tarefas
+
+[GET]"/tarefas/:id"
+deleta uma tarefa
+
+[DELETE]"/tarefas/:id"
+deleta uma tarefa
+
+[POST] "/tarefas/cadastrar"
+Deverá ser enviada pelo body
+
+{
+    "id": "STRING RANDOMICO"
+    "dataInclusao": "STRING AUTOMATICO"
+    "concluido" : false,
+    "descricao": "STRING - NECESSARIO",
+    "nomeColaborador": "STRING - NECESSARIO"
+}
