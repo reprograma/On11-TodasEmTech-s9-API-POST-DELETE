@@ -1,4 +1,4 @@
-const app = require("./src/app")
+const app = require("./src/app") // aqui ta importando do app.js
 const PORT = 3030
 
 app.listen(PORT, ()=>{
